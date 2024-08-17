@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin fasion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>hello world</h1>
+    <header class="p-[2rem] md:pt-[2.5rem] md:px-[8rem] space-y-[2rem]">
+        <nav class="flex items-center justify-between">
+            <img class="h-[auto] w-[12.5rem] md:h-[2.5rem] md:w-auto" src="icons/logo.png" alt="Loading">
+            <i class="fa-solid fa-bars fa-xl md:hidden"></i>
+            <ul class="hidden md:block md:flex font-semibold text-[1rem] text-[#3C3C3C] space-x-[4rem]">
+                <li class="hover:cursor-pointer">Home</li>
+                <li class="hover:cursor-pointer">Product</li>
+                <li class="hover:cursor-pointer">About us</li>
+                <li class="hover:cursor-pointer">Contact us</li>
+            </ul>
+        </nav>
+        <div class="space-y-[3rem] md:flex md:items-center md:justify-between">
+            <div>
+                <h1 class="text-[3.75rem] leading-[4.5rem] uppercase font-bold"><span class="text-[#FABE4C]">Be the penguins</span> <br><span class="text-[#363958]">of winters</span></h1>
+                <p class="text-[#3E3E3E] text-[1rem]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <button class="flex mt-[1.5rem] items-center justify-center bg-[red] w-[10rem] h-[2.7rem] font-semibold text-[1.1rem] rounded-[10px] text-[white] bg-gradient-to-r from-[#A4BC46] to-[#85A019]"><svg class="fill-white h-[1.2rem] w-auto mr-[8px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>Buy now</button>
+            </div>
+            <div>
+                <img src="images/model.png" alt="Loading" class="w-[22rem] h-auto">
+            </div>
+        </div>
+    </header>
 </body>
 </html>
